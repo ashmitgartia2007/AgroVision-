@@ -1,0 +1,8 @@
+{
+  "name": "Agri-Insight Farm Dashboard",
+  "description": "A sophisticated, multilingual dashboard for farmers in India to monitor key farm health metrics, view trends, get weather forecasts, and receive AI-powered recommendations for crop management.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agri-Insight Farm Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        
+           tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'base-100': '#1d232a',
+                        'base-200': '#191e24',
+                        'base-300': '#15191e',
+                        'base-content': '#A6ADBB',
+                        'primary': '#661AE6',
+                        'primary-focus': '#5811D9',
+                        'primary-content': '#ffffff',
+                        'secondary': '#D926AA',
+                        'accent': '#1FB2A5',
+                        'neutral': '#2a323c',
+                        'info': '#3ABFF8',
+                        'success': '#36D399',
+                        'warning': '#FBBD23',
+                        'error': '#F87272',
+                        
+                    },
+                    keyframes: {
+                        'slide-in-up': {
+                            '0%': { transform: 'translateY(100%)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        'fade-in': {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                    animation: {
+                        'slide-in-up': 'slide-in-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
+                        'fade-in': 'fade-in 0.3s ease-out both',
+                    }
+                }
+            }
+        }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+</head>
+<body class="bg-base-100 text-base-content antialiased">
+<div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
